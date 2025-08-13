@@ -1,0 +1,275 @@
+/* global styling */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+a:link {
+    color: #000;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #0000ff;
+}
+
+a:hover {
+    transform: scale(1.1);
+    color: #ff6347;
+}
+
+a:active {
+    color: #ff0000;
+}
+
+main {
+    position: relative;
+    top: 5.25rem;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+label {
+    white-space: nowrap;
+}
+
+
+/* header styling */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #3695b8;
+    height: 5.5rem;
+    color: #2f4f4f;
+    z-index: 99;
+}
+
+nav {
+    position: relative;
+    float: right;
+    bottom: 4rem;
+    width: 50%
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* banner styling */
+#banner {
+    width: 100%;
+    height: 25rem;
+    position: relative;
+    background-image: url("./media/computer-program-coding-screen.jpg");
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+#banner h2 {
+    color: white;
+    position: relative;
+    float: right;
+    font-size: 4rem;
+    right: 2rem;
+    bottom: 1.5rem;
+    text-align: center;
+}
+
+/* quick-about styling */
+#quick-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #afeeee;
+    color: #2f4f4f;
+    font-size: 2rem;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+#quick-about p {
+    width: 80%;
+}
+
+/* random-number-game styling */
+#random-number-game {
+    background-color: #87ceeb;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #2f4f4f;
+}
+
+/* pop-up styling */
+#pop-up-button {
+    position: relative;
+    height: 20rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #afeeee;
+}
+
+#pop-up-window {
+    position: fixed;
+    width: 90%;
+    height: 80%;
+    z-index: 1000;
+    background-color: #87ceeb;
+    top: 4rem;
+    left: 4rem;
+    display: none;
+}
+
+#close-button {
+    position: relative;
+    float: right;
+    top: 0.5rem;
+    right: 0.5rem;
+}
+
+/* form mockup styling */
+#form-mockup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #2f4f4f;
+    background-color: #87ceeb;
+}
+
+#form-column-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+#fake-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+/* footer styling */
+footer {
+    position: relative;
+    top: 5.25rem;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #3695b8;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+}
+
+/* mobile styling */
+@media (max-width: 280px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 0.5rem;
+        height: auto;
+    }
+
+    #form-column-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav {
+        position: static;
+        width: 100%;
+        float: none;
+        font-size: 0.75rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    #banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #87ceeb;
+        background-image: none;
+        width: 100%;
+        height: auto;
+    }
+
+    #banner h2 {
+        color: #fff;
+        position: relative;
+        left: 0.4rem;
+    }
+
+    #quick-about {
+        font-size: 1rem;
+    }
+
+    #random-number-game {
+        text-align: center;
+    }
+
+    #form-mockup {
+        text-align: center;
+    }
+
+    #form-mockup p {
+        width: 90%;
+    }
+}

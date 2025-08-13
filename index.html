@@ -3,13 +3,14 @@
     <head>
         <title>Portfolio Site</title>
         <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <header>
             <h1>Anthony Steven Johnson</h1>
             <nav>
                 <ul>
-                    <li><a href="#banner">Home</a></li>
+                    <li><a href="#">Home</a></li>
                     <li><a href="#quick-about">About</a></li>
                     <li><a href="#random-number-game">Guessing Game</a></li>
                     <li><a href="#pop-up-button">Features</a></li>
@@ -19,9 +20,7 @@
         </header>
         <main>
             <section id="banner">
-                <img src="./media/computer-program-coding-screen.jpg" alt="An image of code on a black screen">
-                <div id="banner-cover"></div>
-                <h2>My Portfolio Site</h2>
+                <h2>My <br> Portfolio <br> Site</h2>
             </section>
             <section id="quick-about">
                 <h2>About Me</h2>
@@ -45,8 +44,8 @@
             </section>
             <section id="pop-up-button">
                 <button id="pop-up">Click Here!</button>
-                <div aria-hidden="true" role="dialog">
-                    <p id="close-button">X</p>
+                <div aria-hidden="true" role="dialog" id="pop-up-window">
+                    <a id="close-button">X</a>
                     <p>This is a pop-up window.</p>
                     <br>
                     <br>
