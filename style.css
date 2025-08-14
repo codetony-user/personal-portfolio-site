@@ -220,7 +220,7 @@ footer {
 }
 
 /* mobile styling */
-@media (max-width: 280px) {
+@media (max-width: 640px) {
     header {
         display: flex;
         flex-direction: column;
