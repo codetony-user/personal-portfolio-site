@@ -1,4 +1,8 @@
 const submitButton = document.getElementById('game-submit');
+const popUp = document.getElementById('pop-up');
+const closeButton = document.getElementById('close-button');
+const form = document.getElementById('fake-form');
+const submit = document.getElementById('submit');
 
 submitButton.addEventListener('click', function() {
     let maxValue = parseInt(document.getElementById('max-value').value);
@@ -16,4 +20,16 @@ submitButton.addEventListener('click', function() {
     } else {
         return document.getElementById('game-answer').innerHTML = `I'm sorry. The number was actually ${randomNumber}. Please try again.`;
     }
+});
+
+popUp.addEventListener('click', function() {
+    return document.getElementById('pop-up-window').style.display = 'block';
+});
+
+closeButton.addEventListener('click', function() {
+    return document.getElementById('pop-up-window').style.display = 'none';
+});
+
+submit.addEventListener('click', function() {
+    form.reset();
 });
